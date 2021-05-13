@@ -1,0 +1,48 @@
+html{
+	font-family: aktiv-grotesk, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size:100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+ 	background-color: #192735;
+    margin-left: 0px;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #fff;
+}
+
+.container{
+	margin: 2rem 2rem;
+}
+
+header{
+	position: fixed;
+	z-index: 300;
+}
+nav{
+  position: fixed;
+  top:10%;
+  right:-7%;
+  display: inline-flex;
+  text-align: right;
+  color: white;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 12px;
+  -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
