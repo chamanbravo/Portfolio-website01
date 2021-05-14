@@ -1,5 +1,7 @@
+ @import url("https://use.typekit.net/qnw5bzs.css");
+
 html{
-	font-family: aktiv-grotesk, sans-serif;
+	font-family: source-code-pro, monospace;
 	font-weight: 800;
 	font-style: normal;
 	font-size:100%;
@@ -38,13 +40,21 @@ nav{
   display: inline-flex;
   text-align: right;
   color: white;
-  font-family: aktiv-grotesk, sans-serif;
+  font-family: source-code-pro, monospace;
   font-weight: bold;
   font-style: normal;
-  font-size: 12px;
+  font-size: 0.8rem;
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+nav ul li{
+	list-style: none;
+	margin-bottom: 0.6rem;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
 }
 
 .logo{
@@ -54,23 +64,29 @@ nav{
 	display: inline-flex;
 	text-align: left;
 	color: #fff;
-	font-family: aktiv-grotesk, sans-serif;
-  	font-weight: bold;
+	font-family: source-code-pro, monospace;
+	font-weight: bold;
   	font-style: normal;
-  	font-size: 12px;
+  	font-size: 0.8rem;
   	-moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   	-webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);	
 }
-
-.job{
-	position: fixed;
-	bottom: 10%;
-	left: 8%;
+.logo .link{
+	color: #fff;
+	text-decoration: none;
 }
 
-.cr{
+.job, .cr{
 	position: fixed;
 	bottom: 10%;
+	font-weight: 100;
+	font-size: 0.8rem;
+}
+
+.job{
+	left: 8%;
+}
+.cr{
 	right: 8%;
 }
