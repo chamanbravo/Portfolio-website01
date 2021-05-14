@@ -34,7 +34,7 @@ header{
 nav{
   position: fixed;
   top:10%;
-  right:-7%;
+  right:8%;
   display: inline-flex;
   text-align: right;
   color: white;
@@ -45,4 +45,32 @@ nav{
   -moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.logo{
+	position: fixed;
+	top: 10%;
+	left: 8%;
+	display: inline-flex;
+	text-align: left;
+	color: #fff;
+	font-family: aktiv-grotesk, sans-serif;
+  	font-weight: bold;
+  	font-style: normal;
+  	font-size: 12px;
+  	-moz-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  	-webkit-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);	
+}
+
+.job{
+	position: fixed;
+	bottom: 10%;
+	left: 8%;
+}
+
+.cr{
+	position: fixed;
+	bottom: 10%;
+	right: 8%;
 }
