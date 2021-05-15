@@ -103,4 +103,31 @@ nav ul li a{
 
 .hero-img img{
 	max-width: 20rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 400;
+}
+
+.name01 h1, .name02 h1{
+	height: 150px;
+	font-size: 5rem;
+}
+
+.name01 h1{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+.name02 h1{
+	position: absolute;;
+	bottom: 10%;
+	right: 30%;
+}
+.outline h1{
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	z-index: 10000;
 }
