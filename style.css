@@ -101,6 +101,11 @@ nav ul li a{
 	right: 8%;
 }
 
+.hero{
+	position: relative;
+	height: 100vh;
+}
+
 .hero-img{
 	position: absolute;
 	top: 50%;
@@ -127,35 +132,19 @@ nav ul li a{
 
 .name01 h1{
 	position: absolute;
-	top: 20%;
-	left: 7%;
+	top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
 }
 
 .name02 h1{
 	position: absolute;
-	bottom: 10%;
-	right: 7%;
+	top: 60%;
+    left: 54%;
+    transform: translate(-50%, -50%);
 }
 .outline h1{
 	color: transparent;
 	-webkit-text-stroke: 1px #fff;
 	z-index: 10000;
-}
-
-@media(min-width: 768px){
-	.name01 h1, .name02 h1{
-		font-size: 6rem;
-	}
-	.hero-img img{
-		max-width: 25rem;
-	}
-	.name01 h1{
-		top: 20%;
-		left: 7%;
-	}
-	.name02 h1{
-		top: 55%;
-		right: 15%;
-	}
-
 }
