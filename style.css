@@ -148,3 +148,21 @@ nav ul li a{
 	-webkit-text-stroke: 1px #fff;
 	z-index: 10000;
 }
+
+@media(min-width: 768px){
+	.hero-img img{
+		max-width: 20rem;
+	}
+	.name01 h1, .name02 h1{
+		font-size: 6rem;
+	}
+	.name01 h1{
+		top: 30%;
+   	 	left: 43%;
+   	}
+   	.name02 h1{
+		top: 57%;
+    	left: 57%;
+	}
+
+}
