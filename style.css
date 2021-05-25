@@ -159,6 +159,22 @@ nav ul li a{
 	right: 8%;
 }
 
+.sw{
+	display: inline-flex;
+	margin-left: 8%;
+	margin-top: 5rem;
+}
+
+.sw p{
+	font-weight: 200;
+	font-family: 0.9rem;
+}
+
+img.arrow {
+    width: 1.2rem;
+    margin-left: 5px;
+}
+
 @media(min-width: 768px){
 	.hero-img img{
 		max-width: 20rem;
