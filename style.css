@@ -208,6 +208,12 @@ img.arrow {
     font-weight: 200;
 }
 
+.date {
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: #9d9797;
+}
+
 .w-arrow{
 	width: 2rem;
 	transform: rotate(90deg);
@@ -234,6 +240,14 @@ img.arrow {
 	align-items: flex-end;
 }
 
+.w-img img{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.w-ind{
+	margin-top: 3.5rem;
+}
 @media(min-width: 768px){
 	.hero-img img{
 		max-width: 20rem;
