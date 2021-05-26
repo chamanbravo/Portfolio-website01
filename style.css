@@ -1,5 +1,11 @@
  @import url("https://use.typekit.net/qnw5bzs.css");
 
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
 html{
 	font-family: source-code-pro, monospace;
 	font-weight: 800;
@@ -133,14 +139,14 @@ nav ul li a{
 
 .name01 h1{
 	position: absolute;
-	top: 35%;
+	top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
 }
 
 .name02 h1{
 	position: absolute;
-	top: 60%;
+	top: 70%;
     left: 54%;
     transform: translate(-50%, -50%);
 }
@@ -159,20 +165,73 @@ nav ul li a{
 	right: 8%;
 }
 
-.sw{
+.pre-title{
 	display: inline-flex;
 	margin-left: 8%;
 	margin-top: 5rem;
 }
 
-.sw p{
+.pre-title p{
 	font-weight: 200;
-	font-family: 0.9rem;
+	font-size: 1rem;
 }
 
 img.arrow {
     width: 1.2rem;
     margin-left: 5px;
+}
+
+.incipit-works{
+	font-weight: 200;
+	font-size: 0.8rem;
+	width: 42ch;
+	margin: 4rem 1rem 4rem auto;
+}
+
+.work-all{
+	margin: 4rem 8%;
+}
+.count{
+	background: transparent;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid #fff;
+}
+
+.num{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+}
+
+.w-arrow{
+	width: 2rem;
+	transform: rotate(90deg);
+}
+
+.w-txt-box{
+	display: grid;
+	grid-template-columns: 52px 1fr auto;
+}
+
+.w-txt-box1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.project-name{
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.w-txt-box3{
+	display: flex;
+	align-items: flex-end;
 }
 
 @media(min-width: 768px){
@@ -183,11 +242,11 @@ img.arrow {
 		font-size: 6rem;
 	}
 	.name01 h1{
-		top: 30%;
+		top: 36%;
    	 	left: 43%;
    	}
    	.name02 h1{
-		top: 57%;
+		top: 65%;
     	left: 57%;
 	}
 	.logo, nav a{
