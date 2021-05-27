@@ -245,6 +245,12 @@ img.arrow {
 	margin-top: 1rem;
 }
 
+@media(max-width: 767px){
+	.w-ind:not(:nth-child(1)){
+		margin-top: 3rem;
+	}
+}
+
 @media(min-width: 768px){
 	.hero-img img{
 		max-width: 20rem;
@@ -269,8 +275,19 @@ img.arrow {
 		display: initial;
 	}
 	.about{
-		max-width: 32ch;
+		max-width: 38ch;
 		right: 22%;
+	}
+	.about h3 {
+    	font-size: 1.5rem;
+    	font-weight: 200;
+    	margin-bottom: 1rem;
+	}
+	.about p{
+		font-size: 1rem;
+	}
+	.incipit-works{
+		margin-right: 8%;
 	}
 	.work-all {
     	margin: 4rem 8%;
@@ -278,8 +295,29 @@ img.arrow {
     	grid-template-columns: 1fr 1fr;
     	column-gap: 3rem;
 	}
+	.pre-title p{
+		font-weight: 200;
+		font-size: 1.2rem;
+	}
+	.incipit-works{
+		font-weight: 200;
+		font-size: 1rem;
+		width: 42ch;
+		margin-right: 8%;
+	}
 	.m {
     	padding-top: 9rem;
 	}
+}
 
+@media(min-width: 1024px){
+	.work-all {
+    	margin: 4rem 20%;
+	}
+	.pre-title{
+		margin-left: 20%;
+	}
+	.incipit-works{
+		margin-right: 20%;
+	}
 }
