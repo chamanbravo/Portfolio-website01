@@ -245,9 +245,6 @@ img.arrow {
 	margin-top: 1rem;
 }
 
-.w-ind{
-	margin-top: 3.5rem;
-}
 @media(min-width: 768px){
 	.hero-img img{
 		max-width: 20rem;
@@ -274,6 +271,15 @@ img.arrow {
 	.about{
 		max-width: 32ch;
 		right: 22%;
+	}
+	.work-all {
+    	margin: 4rem 8%;
+    	display: grid;
+    	grid-template-columns: 1fr 1fr;
+    	column-gap: 3rem;
+	}
+	.m {
+    	padding-top: 9rem;
 	}
 
 }
