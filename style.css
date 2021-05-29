@@ -320,3 +320,18 @@ img.arrow {
 		margin-right: 20%;
 	}
 }
+
+@media(min-width: 1200px){
+	.work-all {
+    	margin: 4rem 15%;
+	}
+	.pre-title{
+		margin-left: 15%;
+	}
+	.incipit-works{
+		margin-right: 15%;
+	}
+	.work-all {
+    	column-gap: 7rem;
+	}
+}
