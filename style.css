@@ -171,7 +171,7 @@ nav ul li a{
 	height: 65vh;
 }
 
-.about{
+.me{
 	position: absolute;
 	bottom: 5%;
 	font-size: 0.8rem;
@@ -180,9 +180,12 @@ nav ul li a{
 	right: 5%;
 }
 
+.work-section{
+	margin: 4rem 8%;
+}
+
 .pre-title{
 	display: inline-flex;
-	margin-left: 8%;
 	margin-top: 5rem;
 }
 
@@ -203,9 +206,6 @@ img.arrow {
 	margin: 4rem 1rem 4rem auto;
 }
 
-.work-all{
-	margin: 4rem 8%;
-}
 .count{
 	background: transparent;
     width: 20px;
@@ -260,6 +260,46 @@ img.arrow {
 	margin-top: 1rem;
 }
 
+.about{
+	margin: 4rem 8%;
+}
+
+.knowme{
+	margin-top: 3rem;
+}
+
+.knowme .hi{
+	margin-bottom: 1.5rem;
+}
+
+.moreaboutme{
+	display: grid;
+	grid-template: 'me'
+					'indeatil'
+					'contacts';
+	margin-top: -18px;
+	z-index: -1;
+	position: relative;
+
+}
+
+.indetial{
+	grid-area: indeatil;
+}
+
+.meimg{
+	grid-area: me;
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: 5%;
+}
+
+.col-contacts{
+	grid-area: contacts;
+	margin-left: auto;
+	margin-right: 5%;
+}
+
 @media(max-width: 767px){
 	.w-ind:not(:nth-child(1)){
 		margin-top: 3rem;
@@ -289,23 +329,19 @@ img.arrow {
 		font-size: 0.8rem;
 		display: initial;
 	}
-	.about{
+	.me{
 		max-width: 38ch;
 		right: 15%;
 	}
-	.about h3 {
+	.me h3 {
     	font-size: 1.5rem;
     	font-weight: 200;
     	margin-bottom: 1rem;
 	}
-	.about p{
+	.me p{
 		font-size: 1rem;
 	}
-	.incipit-works{
-		margin-right: 8%;
-	}
 	.work-all {
-    	margin: 4rem 8%;
     	display: grid;
     	grid-template-columns: 1fr 1fr;
     	column-gap: 3rem;
@@ -318,7 +354,6 @@ img.arrow {
 		font-weight: 200;
 		font-size: 1rem;
 		width: 42ch;
-		margin-right: 8%;
 	}
 	.m {
     	padding-top: 9rem;
@@ -326,26 +361,20 @@ img.arrow {
 }
 
 @media(min-width: 1024px){
-	.work-all {
+	.work-section {
     	margin: 4rem 20%;
 	}
-	.pre-title{
-		margin-left: 20%;
-	}
-	.incipit-works{
-		margin-right: 20%;
+	.about{
+		margin:  4rem 20%;
 	}
 }
 
 @media(min-width: 1200px){
-	.work-all {
+	.work-section {
     	margin: 4rem 15%;
 	}
-	.pre-title{
-		margin-left: 15%;
-	}
-	.incipit-works{
-		margin-right: 15%;
+	.about{
+		margin:  4rem 15%;
 	}
 	.work-all {
     	column-gap: 7rem;
