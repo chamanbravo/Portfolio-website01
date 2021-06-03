@@ -275,7 +275,7 @@ img.arrow {
 .moreaboutme{
 	display: grid;
 	grid-template: 'me'
-					'indeatil'
+					'indetail'
 					'contacts';
 	margin-top: -18px;
 	z-index: -1;
@@ -283,8 +283,8 @@ img.arrow {
 
 }
 
-.indetial{
-	grid-area: indeatil;
+.indetail{
+	grid-area: indetail;
 }
 
 .meimg{
@@ -357,6 +357,41 @@ img.arrow {
 	}
 	.m {
     	padding-top: 9rem;
+	}
+
+	.moreaboutme{
+		display: grid;
+		grid-template: 'indetail me contacts';
+		grid-template-columns: auto 1fr auto;
+	}
+
+	.knowme{
+		display: flex;
+		justify-content: space-between;
+	}
+	.knowme .meint{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.meint span:nth-last-child(1){
+		margin-left: auto;
+	}
+
+	.indetail{
+		max-width: 37ch;
+		font-weight: 100;
+		font-size: 0.9rem;
+	}
+	
+	.meimg {
+    	grid-area: me;
+    	max-width: 23vw;
+    	margin: 0 auto;
+	}
+
+	.col-contacts {
+    	margin-left: auto;
 	}
 }
 
