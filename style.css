@@ -364,27 +364,12 @@ img.arrow {
 	.m {
     	padding-top: 9rem;
 	}
-
 	.moreaboutme{
 		display: grid;
-		grid-template: 'indetail me contacts';
+		grid-template: 'me indetail'
+			           'me contacts';
 		grid-template-columns: auto 1fr auto;
 	}
-
-	.knowme{
-		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
-	}
-	.knowme .meint{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.meint span:nth-last-child(1){
-		margin-left: auto;
-	}
-
 	.indetail{
 		max-width: 37ch;
 		font-weight: 100;
@@ -408,6 +393,24 @@ img.arrow {
 	}
 	.about{
 		margin:  4rem 20%;
+	}
+	.moreaboutme{
+		display: grid;
+		grid-template: 'indetail me contacts';
+		grid-template-columns: auto 1fr auto;
+	}
+	.knowme{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.knowme .meint{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.meint span:nth-last-child(1){
+		margin-left: auto;
 	}
 }
 
