@@ -36,6 +36,9 @@ body{
 p{
 	font-family:  source-code-pro, monospace;
 }
+h1{
+	font-family:  Prompt;
+}
 
 header{
 	position: fixed;
@@ -276,6 +279,14 @@ img.arrow {
 
 .knowme .hi{
 	margin-bottom: 1.5rem;
+	font-weight: 500;
+    font-size: 1.8rem;
+}
+
+h1.meint {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.8rem;
 }
 
 .moreaboutme{
@@ -291,6 +302,9 @@ img.arrow {
 
 .indetail{
 	grid-area: indetail;
+	font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 2rem;
 }
 
 .meimg{
@@ -306,6 +320,10 @@ img.arrow {
 	margin-right: 5%;
 }
 
+.myVideo{
+	height: 100%;
+	width: 100%;
+}
 @media(max-width: 767px){
 	.w-ind:not(:nth-child(1)){
 		margin-top: 3rem;
