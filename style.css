@@ -119,76 +119,6 @@ nav ul li a{
 	right: 5%;
 }
 
-.hero{
-	position: relative;
-	height: 100vh;
-}
-
-.hero-img{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 400;
-}
-
-.hero-img img{
-	max-width: 15rem;
-	animation: upndown 3s linear infinite;
-	pointer-events: none;
-}
-
-@keyframes upndown{
-	0% {transform: translateY(20px);}
-	50% {transform: translateY(0px);}
-	100% {transform: translateY(20px);}
-}
-
-.name01 h1, .name02 h1{
-	height: 150px;
-	font-size: 4rem;
-}
-
-.name01 h1{
-	position: absolute;
-	top: 40%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-}
-
-.name02 h1{
-	position: absolute;
-	top: 70%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-}
-.outline h1{
-	color: transparent;
-	-webkit-text-stroke: 1px #fff;
-	z-index: 10000;
-}
-
-.hero-img-bar {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 55%;
-    z-index: -1;
-}
-
-.hero-img-bar img{
-	height: 65vh;
-}
-
-.me{
-	position: absolute;
-	bottom: 5%;
-	font-size: 0.8rem;
-	font-weight: 200;
-	width: 50%;
-	right: 5%;
-}
-
 .work-section{
 	margin: 4rem 8%;
 }
@@ -331,20 +261,6 @@ h1.meint {
 }
 
 @media(min-width: 768px){
-	.hero-img img{
-		max-width: 18rem;
-	}
-	.name01 h1, .name02 h1{
-		font-size: 6rem;
-	}
-	.name01 h1{
-		top: 36%;
-   	 	left: 43%;
-   	}
-   	.name02 h1{
-		top: 65%;
-    	left: 57%;
-	}
 	.logo, nav a{
 		font-weight: 500;
 		font-size: 0.9rem;
