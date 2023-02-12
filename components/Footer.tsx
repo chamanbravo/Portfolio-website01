@@ -7,14 +7,23 @@ export default function Footer() {
         <h1 className="text-[#fff] text-4xl text-medium">{`Let's connect :)`}</h1>
         <div className="flex flex-col gap-[1rem] items-end">
           <div className="flex gap-[2rem]">
-            <Link href="#" className="text-[#fff] text-lg">
+            <Link
+              href="https://twitter.com/bravo_chaman"
+              className="text-[#fff] text-lg"
+            >
               twitter
             </Link>
-            <Link href="#" className="text-[#fff] text-lg">
+            <Link
+              href="https://github.com/chamanbravo"
+              className="text-[#fff] text-lg"
+            >
               github
             </Link>
           </div>
-          <Link href="#" className="text-[#fff] text-lg">
+          <Link
+            href="mailto:chamanpro9@gmail.com"
+            className="text-[#fff] text-lg"
+          >
             chamanpro9@gmail.com
           </Link>
         </div>

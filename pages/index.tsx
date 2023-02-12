@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Hero, Navbar, WorkCard } from '../components'
+import { Hero, WorkCard } from '../components'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -11,18 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#171717]">
-        <Navbar />
-        <Hero />
+      <Hero />
 
-        <p className="text-[#9C9C9C] text-center mb-[3rem]">Featured works</p>
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+      <p className="text-[#9C9C9C] text-center mb-[3rem]">Featured works</p>
+      <WorkCard />
+      <WorkCard />
+      <WorkCard />
+      <WorkCard />
 
-        <Footer />
-      </main>
+      <Footer />
     </>
   )
 }
