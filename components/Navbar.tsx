@@ -7,10 +7,7 @@ export default function Navbar({ children }: { children: any }) {
         <Link href="/" className="text-[#fff] text-[1.2rem]">
           /
         </Link>
-        <Link href="#" className="text-[#fff] text-[1.2rem]">
-          /guestbook
-        </Link>
-        <Link href="#" className="text-[#fff] text-[1.2rem]">
+        <Link href="/notes" className="text-[#fff] text-[1.2rem]">
           /notes
         </Link>
         <Link href="/about" className="text-[#fff] text-[1.2rem]">

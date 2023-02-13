@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="w-[200px] max-h-[150px]">
         <Image src={chaman} alt="chaman" width={200} height={150} />
       </div>
-      <p className="text-[#E9E9E9] sm:max-w-[27ch] text-lg">
+      <p className="text-[#E9E9E9] sm:max-w-[27ch] text-lg text-opacity-80">
         A developer with love for code, craft and overall visual wellness.
       </p>
     </div>

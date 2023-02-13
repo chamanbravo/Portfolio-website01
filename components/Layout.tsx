@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     album_art_url: '',
   })
 
-  useEffect(() => {
+  const getLanyard = () => {
     fetch('https://api.lanyard.rest/v1/users/957804843198717992')
       .then((res) => res.json())
       .then((data: any) => {
@@ -18,6 +18,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           ...data.data.spotify,
         })
       })
+  }
+
+  useEffect(() => {
+    getLanyard()
+    const interval = setInterval(() => {
+      getLanyard()
+    }, 10000)
+    return () => clearInterval(interval)
   }, [])
 
   return (
