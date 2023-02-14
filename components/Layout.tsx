@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [])
 
   return (
-    <div className="mx-4 sm:mx-[auto] max-w-[1000px] ">
+    <div className="mx-4 sm:mx-[auto] max-w-[1000px] px-[2rem]">
       <Navbar>
         <Spotify {...lanyard} />
       </Navbar>

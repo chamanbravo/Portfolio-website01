@@ -14,29 +14,29 @@ export default function About() {
           My name is Chaman Bravo, I’m a frontend developer working and living
           in Nepal.
         </h1>
-        <p className="text-[#fff] text-xl text-opacity-80">
-          I was born in Portugal and studied graphic design at the Gerrit
-          Rietveld Academie in Amsterdam. I have worked in branding and web
-          design studios as a digital artist and art director. I believe that
-          the success of a project is based on good collaboration.
+        <p className="text-[#fff] text-lg text-opacity-80">
+          I was born in Neapl and studied graphic design at the Gerrit Rietveld
+          Academie in Amsterdam. I have worked in branding and web design
+          studios as a digital artist and art director. I believe that the
+          success of a project is based on good collaboration.
         </p>
 
         <div className="flex gap-[2rem]">
           <a
             href="https://twitter.com/bravo_chaman"
-            className="text-[#fff] text-[1rem]"
+            className="text-[#fff] text-[1rem] hover:text-opacity-60"
           >
             twitter
           </a>
           <a
             href="https://github.com/chamanbravo"
-            className="text-[#fff] text-[1rem]"
+            className="text-[#fff] text-[1rem] hover:text-opacity-60"
           >
             github
           </a>
           <a
             href="mailto:chamanpro9@gmail.com"
-            className="text-[#fff] text-[1rem]"
+            className="text-[#fff] text-[1rem] hover:text-opacity-60"
           >
             chamanpro9@gmail.com
           </a>
