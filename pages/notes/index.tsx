@@ -1,18 +1,14 @@
 import Head from 'next/head'
 
-export default function Notes() {
-  const notes = [
-    {
-      title: 'Self hosted',
-      date: '2023/01/02',
-      timeToRead: '2mins',
-    },
-    {
-      title: 'Self hosted',
-      date: '2023/01/02',
-      timeToRead: '2mins',
-    },
-  ]
+interface INote {
+  _id: string
+  title: string
+  date: string
+  content: string
+}
+
+export default function Notes({ data }: { data: any }) {
+  const { list } = data
   return (
     <>
       <Head>
@@ -30,17 +26,18 @@ export default function Notes() {
         </div>
 
         <div className="flex flex-col gap-[1rem] sm:pl-[2rem] sm:border-l-[1px] sm:border-[#666666] w-[100%] cursor-pointer">
-          {notes.map((note, i) => {
+          {list.map((note: INote) => {
             return (
               <div
-                key={i}
+                key={note?._id}
                 className="hover:bg-[#ddd] hover:bg-opacity-5 w-[100%] p-[10px]"
               >
                 <p className="text-[#fff] text-xl text-opacity-90">
                   {note.title}
                 </p>
                 <div className="text-[#fff] text-opacity-70 text-[0.9rem] inline-flex gap-[1rem]">
-                  <p>{note.timeToRead}</p> <p>{note.date}</p>
+                  <p>{(note.content.length / 200).toFixed(0)} mins Read</p>
+                  <p>{note.date}</p>
                 </div>
               </div>
             )
@@ -49,4 +46,11 @@ export default function Notes() {
       </div>
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch('http://localhost:3000/api/note', { method: 'GET' })
+  const data = await res.json()
+
+  return { props: { data } }
 }
