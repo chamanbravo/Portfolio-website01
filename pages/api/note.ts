@@ -20,8 +20,10 @@ export default async function handler(
   }
 
   if (req.method === 'GET') {
+    const { id } = req.query
+    const searchParams = { ...(id && { _id: id }) }
     try {
-      const list = (await Note.find({})).reverse()
+      const list = (await Note.find({ ...searchParams })).reverse()
       res.json({ list })
     } catch (e) {
       res.status(500).send('error')

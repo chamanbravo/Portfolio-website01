@@ -32,13 +32,15 @@ export default function Notes({ data }: { data: any }) {
                 key={note?._id}
                 className="hover:bg-[#ddd] hover:bg-opacity-5 w-[100%] p-[10px]"
               >
-                <p className="text-[#fff] text-xl text-opacity-90">
-                  {note.title}
-                </p>
-                <div className="text-[#fff] text-opacity-70 text-[0.9rem] inline-flex gap-[1rem]">
-                  <p>{(note.content.length / 200).toFixed(0)} mins Read</p>
-                  <p>{note.date}</p>
-                </div>
+                <a href={`/notes/${note._id}`}>
+                  <p className="text-[#fff] text-xl text-opacity-90">
+                    {note.title}
+                  </p>
+                  <div className="text-[#fff] text-opacity-70 text-[0.9rem] inline-flex gap-[1rem]">
+                    <p>{(note.content.length / 200).toFixed(0)} mins Read</p>
+                    <p>{note.date.slice(0, 10).split('-').join('/')}</p>
+                  </div>
+                </a>
               </div>
             )
           })}

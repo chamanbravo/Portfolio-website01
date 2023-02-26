@@ -12,7 +12,7 @@ export default function NewNote() {
       return alert('Empty field')
     }
     try {
-      const res = await fetch(`https://${window.location.host}/api/note`, {
+      const res = await fetch(`http://${window.location.host}/api/note`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
