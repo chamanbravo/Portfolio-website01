@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 interface INote {
@@ -42,7 +43,7 @@ export default function Dashboard() {
 
       <div className="flex flex-col gap-[1rem] w-[100%] cursor-pointer">
         <a
-          href={`/admin/dashboard/newNote`}
+          href={`/admin/note/newNote`}
           className="group relative flex w-full justify-center rounded-md border border-transparent bg-gray-800 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none"
         >
           Add New
@@ -57,9 +58,17 @@ export default function Dashboard() {
                 <p className="text-[#fff] text-xl text-opacity-90">
                   {note.title}
                 </p>
-                <p className="text-[red]" onClick={() => deleteNote(note?._id)}>
-                  X
-                </p>
+                <div className="inline-flex gap-[1rem]">
+                  <Link href={`/admin/note/editNote/${note?._id}`}>
+                    <p className="text-[#5386e4]">edit</p>
+                  </Link>
+                  <p
+                    className="text-[red]"
+                    onClick={() => deleteNote(note?._id)}
+                  >
+                    X
+                  </p>
+                </div>
               </div>
               <div className="text-[#fff] text-opacity-70 text-[0.9rem] inline-flex gap-[1rem]">
                 <p>{(note.content.length / 200).toFixed(0)} mins Read</p>

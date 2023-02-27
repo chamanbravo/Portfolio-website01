@@ -39,4 +39,14 @@ export default async function handler(
       res.status(500).send('error')
     }
   }
+
+  if (req.method === 'PUT') {
+    const { id } = req.body
+    try {
+      await Note.findByIdAndUpdate(id, req.body)
+      res.status(200).json({ success: true, msg: 'note updated' })
+    } catch (e) {
+      res.status(500).send('error')
+    }
+  }
 }
