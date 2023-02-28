@@ -34,7 +34,7 @@ export default function NewNote() {
     <>
       <Head>
         <title>New Note</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <form

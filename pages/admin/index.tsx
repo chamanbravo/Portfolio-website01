@@ -28,7 +28,7 @@ export default function Admin() {
     <>
       <Head>
         <title>Admin</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="flex justify-center items-center h-[80vh]">

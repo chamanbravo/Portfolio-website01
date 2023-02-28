@@ -14,7 +14,7 @@ export default function Notes({ data }: { data: any }) {
       <Head>
         <title>Notes</title>
         <meta name="description" content="Chaman's notes" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="sm:flex gap-[3rem] my-[4rem]">

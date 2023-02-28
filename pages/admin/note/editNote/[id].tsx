@@ -60,7 +60,7 @@ export default function EditNote() {
     <>
       <Head>
         <title>Edit Note</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <form

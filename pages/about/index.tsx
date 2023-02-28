@@ -9,7 +9,7 @@ export default function About() {
           name="description"
           content="A developer with love for code, craft and overall visual wellness."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="flex flex-col gap-[2rem] max-w-[500px] my-[4rem]">

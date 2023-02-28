@@ -9,7 +9,7 @@ export default function Note({ data }: { data: any }) {
       <Head>
         <title>{note.title}</title>
         <meta name="description" content="Chaman's notes" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div>

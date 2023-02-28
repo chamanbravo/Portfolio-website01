@@ -38,7 +38,7 @@ export default function Dashboard() {
     <>
       <Head>
         <title>Dashboard</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="flex flex-col gap-[1rem] w-[100%] cursor-pointer">

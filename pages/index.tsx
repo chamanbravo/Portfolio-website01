@@ -11,7 +11,8 @@ export default function Home() {
           name="description"
           content="A developer with love for code, craft and overall visual wellness."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="../public/og-chaman.jpg" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Hero />
