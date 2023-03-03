@@ -9,7 +9,7 @@ export default function Admin() {
       password: { value: string }
     }
     const password = target.password.value
-    const res = await fetch(`http://${window.location.host}/api/auth`, {
+    const res = await fetch(`${location.origin}/api/auth`, {
       headers: {
         'Content-Type': 'application/json',
       },

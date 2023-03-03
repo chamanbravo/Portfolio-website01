@@ -9,7 +9,7 @@ export default function EditNote() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:3000/api/note?id=${id}`, {
+      const res = await fetch(`${location.origin}/api/note?id=${id}`, {
         method: 'GET',
       })
       const data = await res.json()
@@ -37,7 +37,7 @@ export default function EditNote() {
       return alert('Empty field')
     }
     try {
-      const res = await fetch(`http://${window.location.host}/api/note`, {
+      const res = await fetch(`${location.origin}/api/note`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

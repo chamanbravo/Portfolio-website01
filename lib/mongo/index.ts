@@ -7,6 +7,6 @@ const options: any = {
 
 export const connectToDatabase = async () => {
   if (!connection.readyState) {
-    connect('mongodb://localhost:27017/www', options)
+    connect(`${process.env.MONGO_URI}`, options)
   }
 }

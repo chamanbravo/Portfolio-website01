@@ -12,7 +12,7 @@ interface INote {
 export default function Dashboard() {
   const [list, setList] = useState<INote[] | []>([])
   const fetchList = async () => {
-    const res = await fetch(`http://${window.location.host}/api/note`, {
+    const res = await fetch(`${location.origin}/api/note`, {
       method: 'GET',
     })
     const data = await res.json()
@@ -20,7 +20,7 @@ export default function Dashboard() {
   }
 
   const deleteNote = async (id: string) => {
-    const res = await fetch(`http://${window.location.host}/api/note`, {
+    const res = await fetch(`${location.origin}/api/note`, {
       method: 'DELETE',
       body: JSON.stringify({ id }),
     })

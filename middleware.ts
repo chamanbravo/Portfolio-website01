@@ -5,6 +5,6 @@ export default function middleware(req: NextRequest) {
   const path = req.url
 
   if (!verify && path?.includes('/dashboard')) {
-    return NextResponse.redirect('http://localhost:3000/')
+    return NextResponse.redirect(`${process.env.URL}`)
   }
 }
