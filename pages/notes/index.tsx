@@ -51,7 +51,7 @@ export default function Notes({ data }: { data: any }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.DOMAIN}/api/note`, {
+  const res = await fetch(`https://chadman.vercel.app/api/note`, {
     method: 'GET',
   })
   const data = await res.json()
