@@ -58,7 +58,7 @@ export default function Note({ data }: { data: any }) {
 }
 
 export async function getServerSideProps({ params }: { params: any }) {
-  const res = await fetch(`${process.env.URL}/api/note?id=${params.id}`, {
+  const res = await fetch(`${process.env.DOMAIN}/api/note?id=${params.id}`, {
     method: 'GET',
   })
   const data = await res.json()
