@@ -7,7 +7,13 @@ interface INote {
   content: string
 }
 
-export default function Notes({ data }: { data: any }) {
+interface INotesProps {
+  data: {
+    list: INote[]
+  }
+}
+
+export default function Notes({ data }: INotesProps) {
   const { list } = data
   return (
     <>

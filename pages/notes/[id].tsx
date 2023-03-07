@@ -1,7 +1,18 @@
 import Markdown from 'markdown-to-jsx'
 import Head from 'next/head'
 
-export default function Note({ data }: { data: any }) {
+interface NoteProps {
+  data: {
+    list: {
+      id: string
+      title: string
+      content: string
+      date: string
+    }[]
+  }
+}
+
+export default function Note({ data }: NoteProps) {
   const note = data.list[0]
 
   return (
